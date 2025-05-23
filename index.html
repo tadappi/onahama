@@ -19,7 +19,7 @@
 /***** 0. 基本セットアップ *****/
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xcccccc);  // 背景色：薄いグレー
-scene.add(new THREE.AxesHelper(10));
+scene.add(new THREE.AxesHelper(0.1));
 const camera = new THREE.PerspectiveCamera(60,innerWidth/innerHeight,0.1,1000);
 camera.position.set(0,40,70);
 const renderer = new THREE.WebGLRenderer({antialias:true});
